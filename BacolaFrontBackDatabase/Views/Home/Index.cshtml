@@ -1,4 +1,4 @@
-﻿
+﻿@model IEnumerable<BacolaFrontBackDatabase.Models.Product>
 
 <main>
     <section>
@@ -160,188 +160,49 @@
                         </div>
                     </div>
                 </div>
-                <div class="coll-2">
-                    <li>
-                        <div class="product-card">
-                            <a href="#">
-                                <div class="product-img">
-                                    <img class=""
-                                         src="https://klbtheme.com/bacola/wp-content/uploads/2021/04/product-image-62-346x310.jpg" />
-                                </div>
-                            </a>
-                            <div class="icons-product-info">
-                                <i class="fal fa-expand-arrows"></i>
-                                <i class="far fa-heart"></i>
-                            </div>
-                            <div class="product-info">
-                                <span style="display: block">23%</span>
-                                <span style="display: block">RECOMMENDED</span>
-                                <h6 style="padding: 5px 0">
-                                    All Natural Italian-Style Chicken Meatballs
-                                </h6>
-                                <span style="display: block">IN STOCK</span>
-                                <span style="display: block; margin-bottom: 5px">1</span>
-                                <span><s>$9.35</s></span>
-                                <span><b>7.25$</b></span><br />
-                            </div>
-                        </div>
-                        <div class="button-add-card"
-                             style="z-index: 50; position: absolute">
-                            <a href="#" class="btn btn-warning">Add to cart</a>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="product-card">
-                            <a href="#">
-                                <div class="product-img">
-                                    <img class=""
-                                         src="https://klbtheme.com/bacola/wp-content/uploads/2021/04/product-image-62-346x310.jpg" />
-                                </div>
-                            </a>
-                            <div class="icons-product-info">
-                                <i class="fal fa-expand-arrows"></i>
-                                <i class="far fa-heart"></i>
-                            </div>
-                            <div class="product-info">
-                                <span style="display: block">23%</span>
-                                <span style="display: block">RECOMMENDED</span>
-                                <h6 style="padding: 5px 0">
-                                    All Natural Italian-Style Chicken Meatballs
-                                </h6>
-                                <span style="display: block">IN STOCK</span>
-                                <span style="display: block; margin-bottom: 5px">1</span>
-                                <span><s>$9.35</s></span>
-                                <span><b>7.25$</b></span><br />
-                            </div>
-                        </div>
-                        <div class="button-add-card"
-                             style="z-index: 50; position: absolute">
-                            <a href="#" class="btn btn-warning">Add to cart</a>
-                        </div>
-                    </li>
+                <div class="row col-xl-7 col-lg-12 col-md-12 col-sm-12 col-xs-12">     
+                    @foreach(var item in Model)
+                    {
+                        @if(item.Id <= 8)
+                        {
+                            <div class="coll-2">
+                             <li>
+                <div class="product-card">
+                  <a href="#">
+                    <div class="product-img">
+                      <img class="" src="~/assets/img/product-image-@{@item.Id}-346x310.jpg">
+                    </div>
+                  </a>
+                  <div class="icons-product-info">
+                    <i class="fal fa-expand-arrows"></i>
+                    <i class="far fa-heart"></i>
+                  </div>
+                  <div class="product-info">
+                    <span style="display: block">23%</span>
+                    <span style="display: block">RECOMMENDED</span>
+                    <h6 style="padding: 5px 0">
+                      @{@item.Name}
+                    </h6>
+                    <span style="display: block">IN STOCK</span>
+                    <span style="display: block; margin-bottom: 5px">1</span>
+                    <span><s>@{@item.Price}</s></span>
+                    <span><b>@{@item.Price}</b></span
+                    ><br />
+                  </div>
                 </div>
-                <div class="coll-2">
-                    <li>
-                        <div class="product-card">
-                            <a href="#">
-                                <div class="product-img">
-                                    <img class=""
-                                         src="https://klbtheme.com/bacola/wp-content/uploads/2021/04/product-image-62-346x310.jpg" />
-                                </div>
-                            </a>
-                            <div class="icons-product-info">
-                                <i class="fal fa-expand-arrows"></i>
-                                <i class="far fa-heart"></i>
-                            </div>
-                            <div class="product-info">
-                                <span style="display: block">23%</span>
-                                <span style="display: block">RECOMMENDED</span>
-                                <h6 style="padding: 5px 0">
-                                    All Natural Italian-Style Chicken Meatballs
-                                </h6>
-                                <span style="display: block">IN STOCK</span>
-                                <span style="display: block; margin-bottom: 5px">1</span>
-                                <span><s>$9.35</s></span>
-                                <span><b>7.25$</b></span><br />
-                            </div>
-                        </div>
-                        <div class="button-add-card"
-                             style="z-index: 50; position: absolute">
-                            <a href="#" class="btn btn-warning">Add to cart</a>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="product-card">
-                            <a href="#">
-                                <div class="product-img">
-                                    <img class=""
-                                         src="https://klbtheme.com/bacola/wp-content/uploads/2021/04/product-image-62-346x310.jpg" />
-                                </div>
-                            </a>
-                            <div class="icons-product-info">
-                                <i class="fal fa-expand-arrows"></i>
-                                <i class="far fa-heart"></i>
-                            </div>
-                            <div class="product-info">
-                                <span style="display: block">23%</span>
-                                <span style="display: block">RECOMMENDED</span>
-                                <h6 style="padding: 5px 0">
-                                    All Natural Italian-Style Chicken Meatballs
-                                </h6>
-                                <span style="display: block">IN STOCK</span>
-                                <span style="display: block; margin-bottom: 5px">1</span>
-                                <span><s>$9.35</s></span>
-                                <span><b>7.25$</b></span><br />
-                            </div>
-                        </div>
-                        <div class="button-add-card"
-                             style="z-index: 50; position: absolute">
-                            <a href="#" class="btn btn-warning">Add to cart</a>
-                        </div>
-                    </li>
+                <div
+                  class="button-add-card"
+                  style="z-index: 50; position: absolute"
+                >
+                  <a href="#" class="btn btn-warning">Add to cart</a>
                 </div>
-                <div class="coll-2">
-                    <li>
-                        <div class="product-card">
-                            <a href="#">
-                                <div class="product-img">
-                                    <img class=""
-                                         src="https://klbtheme.com/bacola/wp-content/uploads/2021/04/product-image-62-346x310.jpg" />
-                                </div>
-                            </a>
-                            <div class="icons-product-info">
-                                <i class="fal fa-expand-arrows"></i>
-                                <i class="far fa-heart"></i>
-                            </div>
-                            <div class="product-info">
-                                <span style="display: block">23%</span>
-                                <span style="display: block">RECOMMENDED</span>
-                                <h6 style="padding: 5px 0">
-                                    All Natural Italian-Style Chicken Meatballs
-                                </h6>
-                                <span style="display: block">IN STOCK</span>
-                                <span style="display: block; margin-bottom: 5px">1</span>
-                                <span><s>$9.35</s></span>
-                                <span><b>7.25$</b></span><br />
-                            </div>
-                        </div>
-                        <div class="button-add-card"
-                             style="z-index: 50; position: absolute">
-                            <a href="#" class="btn btn-warning">Add to cart</a>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="product-card">
-                            <a href="#">
-                                <div class="product-img">
-                                    <img class=""
-                                         src="https://klbtheme.com/bacola/wp-content/uploads/2021/04/product-image-62-346x310.jpg" />
-                                </div>
-                            </a>
-                            <div class="icons-product-info">
-                                <i class="fal fa-expand-arrows"></i>
-                                <i class="far fa-heart"></i>
-                            </div>
-                            <div class="product-info">
-                                <span style="display: block">23%</span>
-                                <span style="display: block">RECOMMENDED</span>
-                                <h6 style="padding: 5px 0">
-                                    All Natural Italian-Style Chicken Meatballs
-                                </h6>
-                                <span style="display: block">IN STOCK</span>
-                                <span style="display: block; margin-bottom: 5px">1</span>
-                                <span><s>$9.35</s></span>
-                                <span><b>7.25$</b></span><br />
-                            </div>
-                        </div>
-                        <div class="button-add-card"
-                             style="z-index: 50; position: absolute">
-                            <a href="#" class="btn btn-warning">Add to cart</a>
-                        </div>
-                    </li>
+              </li>
+                       </div> 
+                        }
+                    }
                 </div>
             </div>
-        </div>
+          </div>
     </section>
     <section>
         </div>
@@ -398,12 +259,13 @@
             </div>
             <div class="slider">
                 <ul class="d-flex slider-scroll" style="transform: translateX(0)">
-                    <li>
+                    @foreach(var item in Model)
+                    {
+                        <li class="coll-2 col-xs-12">
                         <div class="product-card">
                             <a href="#">
                                 <div class="product-img">
-                                    <img class=""
-                                         src="https://klbtheme.com/bacola/wp-content/uploads/2021/04/product-image-62-346x310.jpg" />
+                                    <img class="" src="~/assets/img/product-image-@{@item.Id}-346x310.jpg">
                                 </div>
                             </a>
                             <div class="icons-product-info">
@@ -413,159 +275,16 @@
                             <div class="product-info">
                                 <span style="display: block">23%</span>
                                 <span style="display: block">RECOMMENDED</span>
-                                <h6>All Natural Italian-Style Chicken Meatballs</h6>
+                                <h6>{@item.Name}</h6>
                                 <span style="display: block">IN STOCK</span>
                                 <span style="display: block">1</span>
-                                <span><s>$9.35</s></span>
-                                <span><b>7.25$</b></span><br />
+                                <span><s>{@item.Price}$</s></span>
+                                <span><b>{@item.Price}$</b></span><br />
                                 <a href="#" class="btn btn-warning">Add to cart</a>
                             </div>
                         </div>
-                    </li>
-                    <li>
-                        <div class="product-card">
-                            <a href="#">
-                                <div class="product-img">
-                                    <img class=""
-                                         src="https://klbtheme.com/bacola/wp-content/uploads/2021/04/product-image-62-346x310.jpg" />
-                                </div>
-                            </a>
-                            <div class="icons-product-info">
-                                <i class="fal fa-expand-arrows"></i>
-                                <i class="far fa-heart"></i>
-                            </div>
-                            <div class="product-info">
-                                <span style="display: block">23%</span>
-                                <span style="display: block">RECOMMENDED</span>
-                                <h6>All Natural Italian-Style Chicken Meatballs</h6>
-                                <span style="display: block">IN STOCK</span>
-                                <span style="display: block">1</span>
-                                <span><s>$9.35</s></span>
-                                <span><b>7.25$</b></span><br />
-                                <a href="#" class="btn btn-warning">Add to cart</a>
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="product-card">
-                            <a href="#">
-                                <div class="product-img">
-                                    <img class=""
-                                         src="https://klbtheme.com/bacola/wp-content/uploads/2021/04/product-image-62-346x310.jpg" />
-                                </div>
-                            </a>
-                            <div class="icons-product-info">
-                                <i class="fal fa-expand-arrows"></i>
-                                <i class="far fa-heart"></i>
-                            </div>
-                            <div class="product-info">
-                                <span style="display: block">23%</span>
-                                <span style="display: block">RECOMMENDED</span>
-                                <h6>All Natural Italian-Style Chicken Meatballs</h6>
-                                <span style="display: block">IN STOCK</span>
-                                <span style="display: block">1</span>
-                                <span><s>$9.35</s></span>
-                                <span><b>7.25$</b></span><br />
-                                <a href="#" class="btn btn-warning">Add to cart</a>
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="product-card">
-                            <a href="#">
-                                <div class="product-img">
-                                    <img class=""
-                                         src="https://klbtheme.com/bacola/wp-content/uploads/2021/04/product-image-62-346x310.jpg" />
-                                </div>
-                            </a>
-                            <div class="icons-product-info">
-                                <i class="fal fa-expand-arrows"></i>
-                                <i class="far fa-heart"></i>
-                            </div>
-                            <div class="product-info">
-                                <span style="display: block">23%</span>
-                                <span style="display: block">RECOMMENDED</span>
-                                <h6>All Natural Italian-Style Chicken Meatballs</h6>
-                                <span style="display: block">IN STOCK</span>
-                                <span style="display: block">1</span>
-                                <span><s>$9.35</s></span>
-                                <span><b>7.25$</b></span><br />
-                                <a href="#" class="btn btn-warning">Add to cart</a>
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="product-card">
-                            <a href="#">
-                                <div class="product-img">
-                                    <img class=""
-                                         src="https://klbtheme.com/bacola/wp-content/uploads/2021/04/product-image-62-346x310.jpg" />
-                                </div>
-                            </a>
-                            <div class="icons-product-info">
-                                <i class="fal fa-expand-arrows"></i>
-                                <i class="far fa-heart"></i>
-                            </div>
-                            <div class="product-info">
-                                <span style="display: block">23%</span>
-                                <span style="display: block">RECOMMENDED</span>
-                                <h6>All Natural Italian-Style Chicken Meatballs</h6>
-                                <span style="display: block">IN STOCK</span>
-                                <span style="display: block">1</span>
-                                <span><s>$9.35</s></span>
-                                <span><b>7.25$</b></span><br />
-                                <a href="#" class="btn btn-warning">Add to cart</a>
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="product-card">
-                            <a href="#">
-                                <div class="product-img">
-                                    <img class=""
-                                         src="https://klbtheme.com/bacola/wp-content/uploads/2021/04/product-image-62-346x310.jpg" />
-                                </div>
-                            </a>
-                            <div class="icons-product-info">
-                                <i class="fal fa-expand-arrows"></i>
-                                <i class="far fa-heart"></i>
-                            </div>
-                            <div class="product-info">
-                                <span style="display: block">23%</span>
-                                <span style="display: block">RECOMMENDED</span>
-                                <h6>All Natural Italian-Style Chicken Meatballs</h6>
-                                <span style="display: block">IN STOCK</span>
-                                <span style="display: block">1</span>
-                                <span><s>$9.35</s></span>
-                                <span><b>7.25$</b></span><br />
-                                <a href="#" class="btn btn-warning">Add to cart</a>
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="product-card">
-                            <a href="#">
-                                <div class="product-img">
-                                    <img class=""
-                                         src="https://klbtheme.com/bacola/wp-content/uploads/2021/04/product-image-62-346x310.jpg" />
-                                </div>
-                            </a>
-                            <div class="icons-product-info">
-                                <i class="fal fa-expand-arrows"></i>
-                                <i class="far fa-heart"></i>
-                            </div>
-                            <div class="product-info">
-                                <span style="display: block">23%</span>
-                                <span style="display: block">RECOMMENDED</span>
-                                <h6>All Natural Italian-Style Chicken Meatballs</h6>
-                                <span style="display: block">IN STOCK</span>
-                                <span style="display: block">1</span>
-                                <span><s>$9.35</s></span>
-                                <span><b>7.25$</b></span><br />
-                                <a href="#" class="btn btn-warning">Add to cart</a>
-                            </div>
-                        </div>
-                    </li>
+                    </li>  
+                    }
                 </ul>
             </div>
         </div>
@@ -582,46 +301,17 @@
     <section id="discount-product-list">
         <div class="container">
             <div class="row">
-                <ul class="d-flex slider-scroll"
-                    style="transform: translateX(0); flex-wrap: wrap">
-                    <div class="coll-2">
-                    <li>
-                        <div class="product-card">
-                            <a href="#">
-                                <div class="product-img">
-                                    <img class=""
-                                         src="https://klbtheme.com/bacola/wp-content/uploads/2021/04/product-image-62-346x310.jpg" />
-                                </div>
-                            </a>
-                            <div class="icons-product-info">
-                                <i class="fal fa-expand-arrows"></i>
-                                <i class="far fa-heart"></i>
-                            </div>
-                            <div class="product-info">
-                                <span style="display: block">23%</span>
-                                <span style="display: block">RECOMMENDED</span>
-                                <h6 style="padding: 5px 0">
-                                    All Natural Italian-Style Chicken Meatballs
-                                </h6>
-                                <span style="display: block">IN STOCK</span>
-                                <span style="display: block; margin-bottom: 5px">1</span>
-                                <span><s>$9.35</s></span>
-                                <span><b>7.25$</b></span><br />
-                            </div>
-                        </div>
-                        <div class="button-add-card"
-                             style="z-index: 50; position: absolute">
-                            <a href="#" class="btn btn-warning">Add to cart</a>
-                        </div>
-                    </li>
-            </div>
-            <div class="coll-2">
+                <ul class="d-flex slider-scroll" style="transform: translateX(0); flex-wrap: wrap">
+                    @foreach(var item in Model)
+                    {
+                        if(item.Id <= 10)
+                        {
+                            <div class="coll-2">
                 <li>
                     <div class="product-card">
                         <a href="#">
                             <div class="product-img">
-                                <img class=""
-                                     src="https://klbtheme.com/bacola/wp-content/uploads/2021/04/product-image-62-346x310.jpg" />
+                                <img class="" src="~/assets/img/product-image-@{@item.Id}-346x310.jpg">
                             </div>
                         </a>
                         <div class="icons-product-info">
@@ -632,12 +322,12 @@
                             <span style="display: block">23%</span>
                             <span style="display: block">RECOMMENDED</span>
                             <h6 style="padding: 5px 0">
-                                All Natural Italian-Style Chicken Meatballs
+                                @{@item.Name}
                             </h6>
                             <span style="display: block">IN STOCK</span>
                             <span style="display: block; margin-bottom: 5px">1</span>
-                            <span><s>$9.35</s></span>
-                            <span><b>7.25$</b></span><br />
+                            <span><s>$@{@item.Price}</s></span>
+                            <span><b>$@{@item.Price}</b></span><br />
                         </div>
                     </div>
                     <div class="button-add-card"
@@ -646,256 +336,10 @@
                     </div>
                 </li>
             </div>
-            <div class="coll-2">
-                <li>
-                    <div class="product-card">
-                        <a href="#">
-                            <div class="product-img">
-                                <img class=""
-                                     src="https://klbtheme.com/bacola/wp-content/uploads/2021/04/product-image-62-346x310.jpg" />
-                            </div>
-                        </a>
-                        <div class="icons-product-info">
-                            <i class="fal fa-expand-arrows"></i>
-                            <i class="far fa-heart"></i>
-                        </div>
-                        <div class="product-info">
-                            <span style="display: block">23%</span>
-                            <span style="display: block">RECOMMENDED</span>
-                            <h6 style="padding: 5px 0">
-                                All Natural Italian-Style Chicken Meatballs
-                            </h6>
-                            <span style="display: block">IN STOCK</span>
-                            <span style="display: block; margin-bottom: 5px">1</span>
-                            <span><s>$9.35</s></span>
-                            <span><b>7.25$</b></span><br />
-                        </div>
-                    </div>
-                    <div class="button-add-card"
-                         style="z-index: 50; position: absolute">
-                        <a href="#" class="btn btn-warning">Add to cart</a>
-                    </div>
-                </li>
+                        }
+                    }
+                </ul>
             </div>
-            <div class="coll-2">
-                <li>
-                    <div class="product-card">
-                        <a href="#">
-                            <div class="product-img">
-                                <img class=""
-                                     src="https://klbtheme.com/bacola/wp-content/uploads/2021/04/product-image-62-346x310.jpg" />
-                            </div>
-                        </a>
-                        <div class="icons-product-info">
-                            <i class="fal fa-expand-arrows"></i>
-                            <i class="far fa-heart"></i>
-                        </div>
-                        <div class="product-info">
-                            <span style="display: block">23%</span>
-                            <span style="display: block">RECOMMENDED</span>
-                            <h6 style="padding: 5px 0">
-                                All Natural Italian-Style Chicken Meatballs
-                            </h6>
-                            <span style="display: block">IN STOCK</span>
-                            <span style="display: block; margin-bottom: 5px">1</span>
-                            <span><s>$9.35</s></span>
-                            <span><b>7.25$</b></span><br />
-                        </div>
-                    </div>
-                    <div class="button-add-card"
-                         style="z-index: 50; position: absolute">
-                        <a href="#" class="btn btn-warning">Add to cart</a>
-                    </div>
-                </li>
-            </div>
-            <div class="coll-2">
-                <li>
-                    <div class="product-card">
-                        <a href="#">
-                            <div class="product-img">
-                                <img class=""
-                                     src="https://klbtheme.com/bacola/wp-content/uploads/2021/04/product-image-62-346x310.jpg" />
-                            </div>
-                        </a>
-                        <div class="icons-product-info">
-                            <i class="fal fa-expand-arrows"></i>
-                            <i class="far fa-heart"></i>
-                        </div>
-                        <div class="product-info">
-                            <span style="display: block">23%</span>
-                            <span style="display: block">RECOMMENDED</span>
-                            <h6 style="padding: 5px 0">
-                                All Natural Italian-Style Chicken Meatballs
-                            </h6>
-                            <span style="display: block">IN STOCK</span>
-                            <span style="display: block; margin-bottom: 5px">1</span>
-                            <span><s>$9.35</s></span>
-                            <span><b>7.25$</b></span><br />
-                        </div>
-                    </div>
-                    <div class="button-add-card"
-                         style="z-index: 50; position: absolute">
-                        <a href="#" class="btn btn-warning">Add to cart</a>
-                    </div>
-                </li>
-            </div>
-            <div class="coll-2">
-                <li>
-                    <div class="product-card">
-                        <a href="#">
-                            <div class="product-img">
-                                <img class=""
-                                     src="https://klbtheme.com/bacola/wp-content/uploads/2021/04/product-image-62-346x310.jpg" />
-                            </div>
-                        </a>
-                        <div class="icons-product-info">
-                            <i class="fal fa-expand-arrows"></i>
-                            <i class="far fa-heart"></i>
-                        </div>
-                        <div class="product-info">
-                            <span style="display: block">23%</span>
-                            <span style="display: block">RECOMMENDED</span>
-                            <h6 style="padding: 5px 0">
-                                All Natural Italian-Style Chicken Meatballs
-                            </h6>
-                            <span style="display: block">IN STOCK</span>
-                            <span style="display: block; margin-bottom: 5px">1</span>
-                            <span><s>$9.35</s></span>
-                            <span><b>7.25$</b></span><br />
-                        </div>
-                    </div>
-                    <div class="button-add-card"
-                         style="z-index: 50; position: absolute">
-                        <a href="#" class="btn btn-warning">Add to cart</a>
-                    </div>
-                </li>
-            </div>
-            <div class="coll-2">
-                <li>
-                    <div class="product-card">
-                        <a href="#">
-                            <div class="product-img">
-                                <img class=""
-                                     src="https://klbtheme.com/bacola/wp-content/uploads/2021/04/product-image-62-346x310.jpg" />
-                            </div>
-                        </a>
-                        <div class="icons-product-info">
-                            <i class="fal fa-expand-arrows"></i>
-                            <i class="far fa-heart"></i>
-                        </div>
-                        <div class="product-info">
-                            <span style="display: block">23%</span>
-                            <span style="display: block">RECOMMENDED</span>
-                            <h6 style="padding: 5px 0">
-                                All Natural Italian-Style Chicken Meatballs
-                            </h6>
-                            <span style="display: block">IN STOCK</span>
-                            <span style="display: block; margin-bottom: 5px">1</span>
-                            <span><s>$9.35</s></span>
-                            <span><b>7.25$</b></span><br />
-                        </div>
-                    </div>
-                    <div class="button-add-card"
-                         style="z-index: 50; position: absolute">
-                        <a href="#" class="btn btn-warning">Add to cart</a>
-                    </div>
-                </li>
-            </div>
-            <div class="coll-2">
-                <li>
-                    <div class="product-card">
-                        <a href="#">
-                            <div class="product-img">
-                                <img class=""
-                                     src="https://klbtheme.com/bacola/wp-content/uploads/2021/04/product-image-62-346x310.jpg" />
-                            </div>
-                        </a>
-                        <div class="icons-product-info">
-                            <i class="fal fa-expand-arrows"></i>
-                            <i class="far fa-heart"></i>
-                        </div>
-                        <div class="product-info">
-                            <span style="display: block">23%</span>
-                            <span style="display: block">RECOMMENDED</span>
-                            <h6 style="padding: 5px 0">
-                                All Natural Italian-Style Chicken Meatballs
-                            </h6>
-                            <span style="display: block">IN STOCK</span>
-                            <span style="display: block; margin-bottom: 5px">1</span>
-                            <span><s>$9.35</s></span>
-                            <span><b>7.25$</b></span><br />
-                        </div>
-                    </div>
-                    <div class="button-add-card"
-                         style="z-index: 50; position: absolute">
-                        <a href="#" class="btn btn-warning">Add to cart</a>
-                    </div>
-                </li>
-            </div>
-            <div class="coll-2">
-                <li>
-                    <div class="product-card">
-                        <a href="#">
-                            <div class="product-img">
-                                <img class=""
-                                     src="https://klbtheme.com/bacola/wp-content/uploads/2021/04/product-image-62-346x310.jpg" />
-                            </div>
-                        </a>
-                        <div class="icons-product-info">
-                            <i class="fal fa-expand-arrows"></i>
-                            <i class="far fa-heart"></i>
-                        </div>
-                        <div class="product-info">
-                            <span style="display: block">23%</span>
-                            <span style="display: block">RECOMMENDED</span>
-                            <h6 style="padding: 5px 0">
-                                All Natural Italian-Style Chicken Meatballs
-                            </h6>
-                            <span style="display: block">IN STOCK</span>
-                            <span style="display: block; margin-bottom: 5px">1</span>
-                            <span><s>$9.35</s></span>
-                            <span><b>7.25$</b></span><br />
-                        </div>
-                    </div>
-                    <div class="button-add-card"
-                         style="z-index: 50; position: absolute">
-                        <a href="#" class="btn btn-warning">Add to cart</a>
-                    </div>
-                </li>
-            </div>
-            <div class="coll-2">
-                <li>
-                    <div class="product-card">
-                        <a href="#">
-                            <div class="product-img">
-                                <img class=""
-                                     src="https://klbtheme.com/bacola/wp-content/uploads/2021/04/product-image-62-346x310.jpg" />
-                            </div>
-                        </a>
-                        <div class="icons-product-info">
-                            <i class="fal fa-expand-arrows"></i>
-                            <i class="far fa-heart"></i>
-                        </div>
-                        <div class="product-info">
-                            <span style="display: block">23%</span>
-                            <span style="display: block">RECOMMENDED</span>
-                            <h6 style="padding: 5px 0">
-                                All Natural Italian-Style Chicken Meatballs
-                            </h6>
-                            <span style="display: block">IN STOCK</span>
-                            <span style="display: block; margin-bottom: 5px">1</span>
-                            <span><s>$9.35</s></span>
-                            <span><b>7.25$</b></span><br />
-                        </div>
-                    </div>
-                    <div class="button-add-card"
-                         style="z-index: 50; position: absolute">
-                        <a href="#" class="btn btn-warning">Add to cart</a>
-                    </div>
-                </li>
-            </div>
-            </ul>
-        </div>
         </div>
     </section>
     <section id="ad-banner-first-line">

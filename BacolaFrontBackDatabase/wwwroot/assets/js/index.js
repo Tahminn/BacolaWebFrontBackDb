@@ -60,11 +60,11 @@ $(function () {
     // let valueArr = valueProp.split(", ");
     // let translateXValue = parseInt(valueArr[4]);
         if (clickCount >=0 && clickCount < arrLi.length - 4) {
-            sliderList.style.transform = "translateX(" + (- 259 * clickCount) + "px)";
+            sliderList.style.transform = "translateX(" + (($(".slider-scroll li").width() + 2) * - clickCount) + "px)";
         }
         else{
             clickCount = 0;
-            sliderList.style.transform = "translateX(" + (- 259 * clickCount) + "px)";
+            sliderList.style.transform = "translateX(" + (($(".slider-scroll li").width() + 2) * - clickCount) + "px)";
         }
   });
   leftIcon.addEventListener("click", function(){
@@ -75,10 +75,10 @@ $(function () {
     // let translateXValue = parseInt(valueArr[4]);
     if (clickCount < 0) {
         clickCount = arrLi.length - 5;
-        sliderList.style.transform = "translateX(" + (-259 * clickCount) + "px)";      
+        sliderList.style.transform = "translateX(" + (($(".slider-scroll li").width() + 2) * - clickCount) + "px)";
     }
     else{
-        sliderList.style.transform = "translateX(" + (-259 * clickCount) + "px)";        
+        sliderList.style.transform = "translateX(" + (($(".slider-scroll li").width() + 2) * - clickCount) + "px)";
     }
        
   });

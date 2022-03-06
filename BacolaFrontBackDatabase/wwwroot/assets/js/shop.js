@@ -24,17 +24,19 @@ $(function () {
     //pagination
 
     $("#discount-product-list .pagination-numbers ul li span").on("click", function () {
-        debugger;
         $(this).parents().eq(3).prev().children().addClass("d-none");
+        console.log($(this).parents().eq(3).prev().children())
         const ids = $(this).parents().eq(3).prev().children();
         for (const item of ids) {
-            if (item.id % 8 == 0) {
-                if ($(this).attr("id") == item.id / 8) {
+            let cc = 8 % item.id;
+            console.log(cc)
+            if (8 % item.id == 0) {
+                if ($(this).attr("id") - 1 == Math.floor(item.id / 8) || $(this).attr("id") == item.id / 8) {
                     item.classList.remove("d-none")
                 }
             }
             else {
-                if ($(this).attr("id") - 1 == item.id / 8) {
+                if ($(this).attr("id") - 1 == Math.floor(item.id / 8)) {
                     item.classList.remove("d-none")
                 }
             }

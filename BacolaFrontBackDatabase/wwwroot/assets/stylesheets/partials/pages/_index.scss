@@ -833,11 +833,9 @@ header .header-bottom .container .menu-wrapper .shop-menu li ul {
   color: white !important;
 }
 
-#product-deals .container .row .coll-2 li {
-  margin-bottom: 20px;
-}
-#product-deals .container .row .coll-2 li {
-  position: relative;
+#product-deals .container .row li {
+    margin-bottom: 20px;
+    position: relative;
 }
 #product-deals .container .row .coll-2 li .product-card {
   height: 408px;
@@ -980,7 +978,6 @@ header .header-bottom .container .menu-wrapper .shop-menu li ul {
 
 #slider-products .product-card {
   height: 408px;
-  width: 257px;
   position: relative;
   padding: 1rem;
 }
@@ -1012,6 +1009,7 @@ header .header-bottom .container .menu-wrapper .shop-menu li ul {
   position: absolute;
   top: 0;
   margin-top: 1rem;
+  width: 80%;
 }
 .product-card .product-info span:nth-child(1) {
   background-color: $color-secondary;
@@ -1041,13 +1039,13 @@ header .header-bottom .container .menu-wrapper .shop-menu li ul {
   color: red;
 }
 .product-card .product-info .btn-warning {
-  height: 34px;
-  width: 194px;
-  border-radius: 30px;
-  margin: 1rem 0 0 0rem;
-  text-align: center;
-  justify-content: center;
-  font-size: 14px;
+    height: 34px;
+    width: 90%;
+    border-radius: 30px;
+    margin: 1rem 0 0 0rem;
+    text-align: center;
+    justify-content: center;
+    font-size: 14px;
 }
 .container.mt-5.pt-5 {
   position: relative;
@@ -1190,7 +1188,7 @@ header .header-bottom .container .menu-wrapper .shop-menu li ul {
   margin-top: 50px;
 }
 #ad-banner-first-line .container .row {
-  justify-content: space-between;
+  justify-content: space-around;
 }
 #ad-banner-first-line .container .row .coll-ad-2 {
   margin: 30px 0;
@@ -1248,7 +1246,7 @@ header .header-bottom .container .menu-wrapper .shop-menu li ul {
 }
 
 #ad-banner-second-line .container .row {
-  justify-content: space-between;
+  justify-content: space-around;
 }
 #ad-banner-second-line .container .row .coll-ad-2 {
   margin: 30px 0;
@@ -1624,6 +1622,12 @@ div.footer-privacy-terms
     flex: 0 0 auto;
     width: 33.33%;
   }
+    .col-lg-7 .coll-2 {
+        flex: 0 0 auto;
+        width: 25% !important;
+        padding: 0;
+        margin: 0;
+    }
   .weekend-discount {
     display: none !important;
   }
@@ -1680,6 +1684,12 @@ div.footer-privacy-terms
     padding: 0;
     margin: 0;
   }
+    .col-lg-7 .coll-2 {
+        flex: 0 0 auto;
+        width: 25% !important;
+        padding: 0;
+        margin: 0;
+    }
   .coll-ad-2 {
     flex: 0 0 auto;
     width: 30%;

@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "PgJIjR6BYvguD7w/QqluS0cPz7swz/303MfByQNSdy0=",
+  "Hash": "t3jW58PsaDlOCjAo7W8wKTcg96+dDsWR3v9xypWiE7I=",
   "Source": "BacolaFrontBackDatabase",
   "BasePath": "_content/BacolaFrontBackDatabase",
   "Mode": "Default",
@@ -678,6 +678,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\assets\\stylesheets\\style.css.map"
+    },
+    {
+      "Identity": "C:\\Users\\tahmi\\Desktop\\BacolaFrontBackDatabase\\BacolaFrontBackDatabase\\wwwroot\\assets\\stylesheets\\style.min.css",
+      "SourceId": "BacolaFrontBackDatabase",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\tahmi\\Desktop\\BacolaFrontBackDatabase\\BacolaFrontBackDatabase\\wwwroot\\",
+      "BasePath": "_content/BacolaFrontBackDatabase",
+      "RelativePath": "assets/stylesheets/style.min.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\stylesheets\\style.min.css"
     },
     {
       "Identity": "C:\\Users\\tahmi\\Desktop\\BacolaFrontBackDatabase\\BacolaFrontBackDatabase\\wwwroot\\assets\\stylesheets\\style.scss",
