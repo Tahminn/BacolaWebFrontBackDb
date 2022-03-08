@@ -1,8 +1,4 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 
 namespace BacolaFrontBackDatabase.Controllers
 {
@@ -11,7 +7,7 @@ namespace BacolaFrontBackDatabase.Controllers
         public IActionResult Index()
         {
             ViewBag.Title = "Product Info";
-            ViewBag.Javascript = "product-info";
+            ViewBag.Javascript = null;
             return View();
         }
     }

@@ -1,7 +1,6 @@
-﻿using Microsoft.EntityFrameworkCore;
-using Microsoft.Extensions.DependencyInjection;
-using BacolaFrontBackDatabase.Data;
+﻿using BacolaFrontBackDatabase.Data;
 using BacolaFrontBackDatabase.Models;
+using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
 

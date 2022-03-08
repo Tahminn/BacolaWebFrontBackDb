@@ -1646,12 +1646,12 @@ div.footer-privacy-terms div.container div.row div.col-lg-6.col-sm-12.col-xs-12 
     width: 33.33%;
   }
 
-  .col-lg-7 .coll-2 {
-    flex: 0 0 auto;
-    width: 25% !important;
-    padding: 0;
-    margin: 0;
-  }
+    .col-xs-12 .coll-2 {
+        flex: 0 0 auto;
+        width: 25% !important;
+        padding: 0;
+        margin: 0;
+    }
 
   .weekend-discount {
     display: none !important;
@@ -1715,12 +1715,12 @@ div.footer-privacy-terms div.container div.row div.col-lg-6.col-sm-12.col-xs-12 
     margin: 0;
   }
 
-  .col-lg-7 .coll-2 {
-    flex: 0 0 auto;
-    width: 25% !important;
-    padding: 0;
-    margin: 0;
-  }
+    .col-xs-12 .coll-2 {
+        flex: 0 0 auto;
+        width: 25% !important;
+        padding: 0;
+        margin: 0;
+    }
 
   .coll-ad-2 {
     flex: 0 0 auto;

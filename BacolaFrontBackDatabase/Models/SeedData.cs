@@ -1,8 +1,5 @@
-﻿using Microsoft.EntityFrameworkCore;
-using Microsoft.Extensions.DependencyInjection;
-using BacolaFrontBackDatabase.Data;
-using System;
-using System.Linq;
+﻿using BacolaFrontBackDatabase.Data;
+using Microsoft.EntityFrameworkCore;
 
 
 namespace BacolaFrontBackDatabase.Models
@@ -21,7 +18,7 @@ namespace BacolaFrontBackDatabase.Models
                     return;   // DB has been seeded
                 }
 
-                context.Product.AddRange(                  
+                context.Product.AddRange(
 
                 );
                 context.SaveChanges();

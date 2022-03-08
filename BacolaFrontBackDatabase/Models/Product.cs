@@ -1,6 +1,4 @@
-﻿using System.ComponentModel.DataAnnotations;
-
-namespace BacolaFrontBackDatabase.Models
+﻿namespace BacolaFrontBackDatabase.Models
 {
     public class Product
     {
